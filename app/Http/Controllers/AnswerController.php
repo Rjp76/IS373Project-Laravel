@@ -105,4 +105,12 @@ class AnswerController extends Controller
         $answer->delete();
         return redirect()->route('questions.show',['question_id' => $question])->with('message', 'Delete');
     }
+
+    public function like($question, $answer)
+    {
+        $answer = Answer::find($answer);
+        $answer->likes++;
+        $answer->save();
+        return redirect()->route('answers.show',['question_id' => $question, 'answer_id' => $answer]);
+    }
 }
