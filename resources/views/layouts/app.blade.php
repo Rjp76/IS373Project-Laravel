@@ -18,16 +18,15 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+  <!--  <link href="{/{ asset('css/app.css') }}" rel="stylesheet"> -->
+    <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
 
 </head>
 <body>
 <div id="app">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
         <div class="container">
-
 
             @guest
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -37,8 +36,16 @@
                 <a class="navbar-brand" href="{{ route('home') }}">
                     Home
                 </a>
+                <a class="navbar-brand" href="{{ route('home') }}">
+                    Home
+                </a>
+                <a class="navbar-brand" href="{{ route('home') }}">
+                    Home
+                </a>
+                <a class="navbar-brand" href="{{ route('home') }}">
+                    Home
+                </a>
             @endguest
-
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
