@@ -7,7 +7,7 @@
                 <div class="card">
                     <div class="card-header">Questions
                         <a class="btn btn-primary float-right" href="{{ route('questions.create') }}">
-                            Create a Question
+                            Create a Blog Post
                         </a>
 
                         <div class="card-body">
@@ -17,11 +17,7 @@
                                     <div class="col-sm-4 d-flex align-items-stretch">
                                         <div class="card mb-3 ">
                                             <div class="card-header">
-                                                <small class="text-muted">
-                                                    Updated: {{ $question->created_at->diffForHumans() }}
-                                                    Answers: {{ $question->answers()->count() }}
-
-                                                </small>
+                                               {{$question->header}}
                                             </div>
                                             <div class="card-body">
                                                 <p class="card-text">{{$question->body}}</p>

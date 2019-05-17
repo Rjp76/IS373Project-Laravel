@@ -36,14 +36,14 @@
                 <a class="navbar-brand" href="{{ route('home') }}">
                     Home
                 </a>
-                <a class="navbar-brand" href="{{ route('home') }}">
-                    Home
+                <a class="navbar-brand" href="{{ route('place')}}"> <!--About-->
+                    About
                 </a>
-                <a class="navbar-brand" href="{{ route('home') }}">
-                    Home
+                <a class="navbar-brand" href="{{ route('place') }}">
+                    Events
                 </a>
-                <a class="navbar-brand" href="{{ route('home') }}">
-                    Home
+                <a class="navbar-brand" href="{{ route('place') }}">
+                    Jobs
                 </a>
             @endguest
 
