@@ -31,7 +31,7 @@
                 <div class="card">
                     <div class="card-header"><a class="btn btn-primary float-left"
                                                 href="{{ route('answers.create', ['question_id'=> $question->id])}}">
-                            Answer Question
+                           Leave a Comment
                         </a></div>
 
                     <div class="card-body">
@@ -51,7 +51,7 @@
                         @empty
                             <div class="card">
 
-                                <div class="card-body"> No Answers</div>
+                                <div class="card-body"> No Comments</div>
                             </div>
                         @endforelse
 
